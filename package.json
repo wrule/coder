@@ -1,0 +1,16 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wrule/coder.git",
+  "author": "wrule <1982775886@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "24",
+    "tsx": "^4.21.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.19",
+    "nanoid": "^5.1.6"
+  }
+}
