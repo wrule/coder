@@ -8,7 +8,20 @@ async function main() {
   });
   const result = streamText({
     model: openrouter('google/gemini-3-flash-preview'),
-    prompt: '写一个关于AI的短篇故事',
+    messages: [
+      {
+        role: 'user',
+        content: '1+1等于多少?',
+      },
+      {
+        role: 'assistant',
+        content: '1+1等于苹果',
+      },
+      {
+        role: 'user',
+        content: '你刚刚说什么？你犯了什么错误',
+      },
+    ],
   });
 
   for await (const chunk of result.textStream) {
