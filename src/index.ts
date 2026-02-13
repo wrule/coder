@@ -7,8 +7,8 @@ async function main() {
     apiKey: process.env.OPENROUTER_API_KEY!,
   });
   const result = streamText({
-    model: openrouter.chat('meta-llama/llama-3.1-405b-instruct'),
-    prompt: 'Write a short story about AI.',
+    model: openrouter.chat('google/gemini-3-flash-preview'),
+    prompt: '写一个关于AI的短篇故事',
   });
 
   for await (const chunk of result.textStream) {
