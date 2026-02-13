@@ -8,4 +8,8 @@ class Session {
   public get Messages() {
     return this.messages;
   }
+
+  public get ModelMessages() {
+    return this.messages.map((message) => message.Message);
+  }
 }
