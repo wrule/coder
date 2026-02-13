@@ -1,6 +1,7 @@
 {
   "name": "coder",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "tsx ./src/index.ts"
@@ -14,6 +15,8 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@openrouter/ai-sdk-provider": "^2.2.3",
+    "ai": "^6.0.85",
     "dayjs": "^1.11.19",
     "dotenv": "^17.3.1",
     "nanoid": "^5.1.6"
