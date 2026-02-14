@@ -26,7 +26,7 @@ class Session {
       messages: newModelMessages,
     });
     for await (const chunk of result.textStream) {
-      console.log(chunk);
+      process.stdout.write(chunk);
     }
   }
 }
