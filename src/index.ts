@@ -13,10 +13,13 @@ async function main() {
     input: process.stdin,
     output: process.stdout,
   });
-  let question = '';
-  while (question !== 'exit') {
-    question = await rl.question('>> ');
+  while (true) {
+    const question = await rl.question('>> ');
+    if (question === 'exit') {
+      break;
+    }
     await session.SendTextMessage(question);
+    console.log();
   }
   rl.close();
 }
