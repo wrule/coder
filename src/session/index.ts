@@ -1,4 +1,3 @@
-import dayjs from 'dayjs';
 import { streamText, type LanguageModel, type UserModelMessage } from 'ai';
 import Message from './message';
 
@@ -31,3 +30,5 @@ class Session {
     }
   }
 }
+
+export default Session;

@@ -1,11 +1,11 @@
-import { Dayjs } from 'dayjs';
+import dayjs from 'dayjs';
 import type { ModelMessage } from 'ai';
 
 class Message {
   public constructor(
     private message: ModelMessage,
-    private sendTime: Dayjs,
-    private completedTime: Dayjs,
+    private sendTime: dayjs.Dayjs,
+    private completedTime: dayjs.Dayjs,
   ) {}
 
   public get Message() {
