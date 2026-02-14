@@ -8,7 +8,7 @@ async function main() {
   });
   const model = openrouter('google/gemini-3-flash-preview');
   const session = new Session(model);
-  await session.SendTextMessage('1+1等于多少?');
+  await session.SendTextMessage('写一个有关于AI的七言绝句');
 }
 
 main();
